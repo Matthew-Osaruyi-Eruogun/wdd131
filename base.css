@@ -53,8 +53,15 @@ main {
     margin: 0 auto 1rem;
     padding: 1rem;
     display: flex;
+    justify-content:space-around;
     gap: 10px;
 
+}
+
+ul li {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Card styling */
@@ -106,8 +113,9 @@ h3 {
 
 }
 
+
 .profile-img {
-    width: 160px;
+    width: 120px;
     height: auto;
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -159,4 +167,78 @@ footer {
 #lastModified {
     color: #fcd303;
     margin-top: 0.5rem;
+}
+
+/* -----------------------------------
+   MOBILE RESPONSIVENESS (≤ 768px)
+----------------------------------- */
+@media (max-width: 768px) {
+
+    header h1,
+    .highlighted-title {
+        font-size: 1rem;
+        word-break: break-word;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    nav a {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    main {
+        padding: 1rem;
+        align-items: stretch;
+    }
+
+    .about-me-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card1, .card2{
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .card.about-me,
+    .card.web-resources {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flag-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .flag-wrapper {
+        max-width: 100%;
+    }
+
+    .profile-img {
+        width: 100px;
+    }
+
+    footer {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
 }
