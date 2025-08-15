@@ -1,0 +1,25 @@
+@media (min-width: 768px) {
+    nav a.hamburger {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    nav ul li a {
+    color: white;
+    text-decoration: none;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
